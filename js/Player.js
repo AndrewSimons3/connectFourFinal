@@ -4,6 +4,10 @@ class Player {
     this.id = id;
     this.color = color;
     this.active = false;
-    this.token = [];
+    this.token = this.createTokens;
+  }
+
+  createTokens() {
+
   }
 }
