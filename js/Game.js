@@ -17,10 +17,11 @@ class Game {
     return players;
 
   }
-
+  
+  //gets game ready for play
   startGame() {
 
   }
 
-  
+
 }
