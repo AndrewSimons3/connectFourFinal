@@ -31,11 +31,11 @@ class Game {
   handleKeydown(event) {
     if (this.ready) {
       if (event.key === "ArrowLeft") {
-        // move left
+        moveLeft();
       } else if (event.key === "ArrowRight") {
-      //Arrow left
+        moveRight();
       } else if (event.key === "ArrowDown") {
-      //Arrow down
+        
       }
     }
   }
