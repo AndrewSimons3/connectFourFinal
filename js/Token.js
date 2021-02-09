@@ -5,15 +5,17 @@ class Token {
       this.dropped = false;
   }
 
+  //gets associated htmlToken
+  get htmlToken() {
+    return document.getElementById(this.id);
+  }
+
+  //draws new HTML token
   drawHTMLToken() {
-    let token = document.createElement('div');
+    const token = document.createElement('div');
     document.getElementById('game-board-underlay').appendChild(token);
     token.setAttribute('id', this.id);
     token.setAttribute('class', 'token');
     token.style.backgroundColor = this.owner.color;
-  }
-
-  get htmlToken() {
-    return document.getElementById(this.id);
   }
 }
