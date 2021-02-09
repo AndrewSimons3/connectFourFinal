@@ -37,4 +37,13 @@ class Token {
       this.columnLocation += 1;
     }
   }
+
+  //drops html token into targeted board space
+  drop(target, reset) {
+    this.dropped = true;
+
+    $(this.htmlToken).animate({
+      top: (target.y * target.diameter)
+    }, 750, 'easeOutBounce', reset);
+  }
 }
