@@ -31,9 +31,9 @@ class Game {
   handleKeydown(event) {
     if (this.ready) {
       if (event.key === "ArrowLeft") {
-        moveLeft();
+        this.activePlayer.activeToken.moveLeft();
       } else if (event.key === "ArrowRight") {
-        moveRight();
+        this.activePlayer.activeToken.moveRight(this.board.columns);
       } else if (event.key === "ArrowDown") {
         
       }
