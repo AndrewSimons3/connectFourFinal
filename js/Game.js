@@ -59,6 +59,7 @@ class Game {
     }
   }
 
+  //logic to check for a winner
   checkForWin(target){
     const owner = target.token.owner;
     let win = false;
