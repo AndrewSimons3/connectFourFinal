@@ -21,10 +21,22 @@ class Game {
 
   }
   
-  //gets game ready for play
+  //begins game
   startGame(){
     this.board.drawHTMLBoard();
     this.activePlayer.activeToken.drawHTMLToken();
     this.ready = true;
+  }
+
+  handleKeydown(event) {
+    if (this.ready) {
+      if (event.key === "ArrowLeft") {
+        // move left
+      } else if (event.key === "ArrowRight") {
+      //Arrow left
+      } else if (event.key === "ArrowDown") {
+      //Arrow down
+      }
+    }
   }
 }
