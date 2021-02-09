@@ -18,7 +18,7 @@ class Game {
   }
   
   //gets game ready for play
-  startGame() {
+  startGame(){
     this.board.drawHTMLBoard();
     this.activePlayer.activeToken.drawHTMLToken();
     this.ready = true;
