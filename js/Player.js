@@ -7,14 +7,9 @@ class Player {
     this.tokens = this.createTokens(21);
   }
 
-  /**
- * Creates token objects for player
- * @param     {number}    num - Number of token objects to be created
- * @returns   {Array}     An array of the newly created token objects
- */
-  
+  // creates token object for players
   createTokens(num) {
-    let tokens = [];
+    const tokens = [];
 
     //for loop to iterate through num
     for (let i = 0; i < num, i++;) {
@@ -34,8 +29,4 @@ class Player {
   get activeToken() {
     return this.unusedTokens[0];
   }
-
-
-
-
 }
