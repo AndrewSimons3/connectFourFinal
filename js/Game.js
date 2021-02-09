@@ -35,8 +35,13 @@ class Game {
       } else if (event.key === "ArrowRight") {
         this.activePlayer.activeToken.moveRight(this.board.columns);
       } else if (event.key === "ArrowDown") {
-        
+        this.activePlayer.activeToken.playToken();
       }
     }
+  }
+
+  //allows the player to play a token
+  playToken() {
+
   }
 }
