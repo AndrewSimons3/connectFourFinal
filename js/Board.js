@@ -27,4 +27,11 @@ class Board {
 
     return spaces;
   }
+
+  drawHTMLBoard() {
+    
+  }
+
+
+
 }
