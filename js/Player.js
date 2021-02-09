@@ -3,7 +3,7 @@ class Player {
     this.name = name;
     this.id = id;
     this.color = color;
-    this.active = false;
+    this.active = active;
     this.token = this.createTokens(21);
   }
 
