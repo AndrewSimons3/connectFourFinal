@@ -5,5 +5,15 @@ class Token {
       this.dropped = false;
   }
 
-  
+  drawHTMLToken() {
+    let tokens = document.createElement('div');
+    tokens.appendChild('game-board-underlay');
+    tokens.setAttribute('id', this);
+    tokens.setAttribute('class', 'token');
+    tokens
+  }
+
+  htmlToken() {
+
+  }
 }
