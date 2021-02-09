@@ -23,5 +23,9 @@ class Game {
 
   }
 
+  get activePlayer() {
+    
+  }
+
 
 }
