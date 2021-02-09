@@ -26,5 +26,4 @@ class Game {
     return this.players.find(player => player.active)
   }
 
-
 }
