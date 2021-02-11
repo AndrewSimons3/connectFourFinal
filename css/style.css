@@ -151,3 +151,12 @@ top: -60px;
 left: 0;
 right: 0;
 }
+
+#player-turn {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: -60px;
+  left: 0;
+  right: 0;
+  }

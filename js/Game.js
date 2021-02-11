@@ -66,8 +66,11 @@ class Game {
   switchPlayers() {
     for (let player of this.players) {
       player.active = player.active === true ? false : true;
+
     }
   }
+
+  
 
   //Updates game state after token is dropped. 
   updateGameState(token, target) {
@@ -148,6 +151,12 @@ class Game {
   gameOver(message) {
     document.getElementById('game-over').style.display = 'block';
     document.getElementById('game-over').textContent = message;
+  }
+
+  //updates text on board of what players turn it is
+  playerTurn(message) {
+    document.getElementById('player-turn').style.display = 'block';
+    document.getElementById('player-turn').textContent = message;
   }
 
 }
