@@ -26,7 +26,9 @@ class Player {
 
   //check if a player has any undropped tokens left
   checkTokens() {
-
+    if (this.tokens = 0) {
+      return false;
+    }
   }
   
   /**
