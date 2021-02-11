@@ -56,7 +56,7 @@ class Game {
     if (targetSpace !== null){
       game.ready = false;
       activeToken.drop(targetSpace, function() {
-        
+
       });
     }
   }
@@ -68,8 +68,16 @@ class Game {
     }
   }
 
-  updateGameState() {
-
+  //Updates game state after token is dropped. 
+  updateGameState(token, target) {
+    target.mark();
+    if (this.checkForWin) {
+      this.gameOver();
+    } else {
+      !this.checkForWin {
+      this.switchPlayers;
+      }
+    }
   }
 
   //logic to check for a winner
