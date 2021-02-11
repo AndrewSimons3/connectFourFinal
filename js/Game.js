@@ -66,7 +66,12 @@ class Game {
   switchPlayers() {
     for (let player of this.players) {
       player.active = player.active === true ? false : true;
-
+      if (!player.active) {
+        this.playerTurn("Player 1's Turn")
+      } else {
+        this.playerTurn("Player 2's Turn")
+      }
+      
     }
   }
 
@@ -78,7 +83,7 @@ class Game {
 
     if (!this.checkForWin(target)) {
 
-      this.switchPlayers();
+      this.switchPlayers()
 
       if (this.activePlayer.checkTokens()) {
           this.activePlayer.activeToken.drawHTMLToken();
@@ -87,6 +92,7 @@ class Game {
           this.gameOver('No more tokens');
       }
     } else {
+      document.getElementById('player-turn').style.display = 'none';
       this.gameOver(`${target.owner.name} wins!`)
     }
   }
