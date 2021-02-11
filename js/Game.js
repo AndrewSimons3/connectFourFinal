@@ -71,13 +71,20 @@ class Game {
 
   //Updates game state after token is dropped. 
   updateGameState(token, target) {
-    target.mark();
-    if (this.checkForWin) {
-      this.gameOver();
-    } else {
-      !this.checkForWin {
-      this.switchPlayers;
+    target.mark(token);
+
+    if (!this.checkForWin(target)) {
+
+      this.switchPlayers();
+
+      if (this.activePlayer.checkTokens()) {
+          this.activePlayer.activeToken.drawHTMLToken();
+          this.ready = true;
+      } else {
+          this.gameOver('No more tokens');
       }
+    } else {
+      this.gameOver(`${targer.owener.name} wins!`)
     }
   }
 

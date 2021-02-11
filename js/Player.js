@@ -26,10 +26,8 @@ class Player {
 
   //check if a player has any undropped tokens left
   checkTokens() {
-    if (this.tokens = 0) {
-      return false;
+    return this.unusedTokens.length == 0 ? false : true;
     }
-  }
   
   /**
    * Gets all tokens that haven't been dropped.
