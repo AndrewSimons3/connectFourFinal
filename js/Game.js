@@ -55,7 +55,9 @@ class Game {
     }
     if (targetSpace !== null){
       game.ready = false;
-      activeToken.drop(targetSpace);
+      activeToken.drop(targetSpace, function() {
+        
+      });
     }
   }
 
@@ -64,7 +66,10 @@ class Game {
     for (let player of this.players) {
       player.active = player.active === true ? false : true;
     }
-     
+  }
+
+  updateGameState() {
+
   }
 
   //logic to check for a winner
