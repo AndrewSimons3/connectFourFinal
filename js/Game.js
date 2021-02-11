@@ -61,7 +61,10 @@ class Game {
 
   //switches active player
   switchPlayers() {
-    if (this.players.active === true ? false : true;)
+    for (let player of this.players) {
+      player.active = player.active === true ? false : true;
+    }
+     
   }
 
   //logic to check for a winner
@@ -122,7 +125,8 @@ class Game {
 
   //displays game over message.
   gameOver(message) {
-    document.getElementById('game-over')
+    document.getElementById('game-over').style.display = 'block';
+    document.getElementById('game-over').textContent = message;
   }
 
 }
