@@ -26,6 +26,8 @@ class Game {
     this.board.drawHTMLBoard();
     this.activePlayer.activeToken.drawHTMLToken();
     this.ready = true;
+    this.playerTurn("Player 1's Turn")
+
   }
 
   //allows player to move left, right and play token
