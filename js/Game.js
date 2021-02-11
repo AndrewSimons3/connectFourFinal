@@ -59,6 +59,11 @@ class Game {
     }
   }
 
+  //switches active player
+  switchPlayers() {
+    if (this.players.active === true ? false : true;)
+  }
+
   //logic to check for a winner
   checkForWin(target){
     const owner = target.token.owner;
@@ -115,6 +120,9 @@ class Game {
     return win;
   }
 
-
+  //displays game over message.
+  gameOver(message) {
+    document.getElementById('game-over')
+  }
 
 }
