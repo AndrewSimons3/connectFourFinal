@@ -151,13 +151,7 @@ class Game {
       }
 
     return win;
-  }
-
-  restartGame(event) {
-    document.getElementById('restart').addEventListener('click', function() {
-      this.gmae.board
-    })
-  }
+  };
 
   //displays game over message.
   gameOver(message) {
