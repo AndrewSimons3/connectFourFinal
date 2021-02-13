@@ -18,7 +18,6 @@ class Game {
     const players = [new Player('Player 1', 1, '#e15258', true),
                      new Player('Player 2', 2, '#e59a13')];
     return players;
-
   }
   
   //begins game
@@ -27,7 +26,6 @@ class Game {
     this.activePlayer.activeToken.drawHTMLToken();
     this.ready = true;
     this.playerTurn("Player 1's Turn")
-
   }
 
   //allows player to move left, right and play token
@@ -153,6 +151,12 @@ class Game {
       }
 
     return win;
+  }
+
+  restartGame(event) {
+    document.getElementById('restart').addEventListener('click', function() {
+      this.gmae.board
+    })
   }
 
   //displays game over message.
