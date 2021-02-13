@@ -10,10 +10,10 @@ document.getElementById('begin-game').addEventListener('click', function() {
   document.getElementById('play-area').style.opacity = '1';
 });
 
-document.getElementById('restart').addEventListener('click', function() {
+// document.getElementById('restart').addEventListener('click', function() {
   
-  game.startGame();
-});
+//   game.startGame();
+// });
 
 document.addEventListener('keydown', function(event) {
   game.handleKeydown(event);
