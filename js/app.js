@@ -11,8 +11,9 @@ document.getElementById('begin-game').addEventListener('click', function() {
 });
 
 document.getElementById('restart').addEventListener('click', function() {
-    
-  });
+  
+  game.startGame();
+});
 
 document.addEventListener('keydown', function(event) {
   game.handleKeydown(event);

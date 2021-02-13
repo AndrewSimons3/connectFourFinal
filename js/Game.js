@@ -28,6 +28,11 @@ class Game {
     this.playerTurn("Player 1's Turn")
   }
 
+  //restarts game
+  // restartGame() {
+  //   document.getElementById("body").value = "";
+  // }
+
   //allows player to move left, right and play token
   handleKeydown(event) {
     if (this.ready) {
